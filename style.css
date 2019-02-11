@@ -7,11 +7,11 @@ span{
 #grid{
     display: grid;
     grid-template-areas: 'div div div div'
-                         'header header header header'
-                         'nav nav nav nav'
-                         'section section section section'
-                         'article article article article'
-                         'footer footer footer footer';
+    'header header header header'
+    'nav nav nav nav'
+    'section section section section'
+    'article article article article'
+    'footer footer footer footer';
     grid-template-rows: 10px 510px 285px 365px 395px 95px;
     grid-template-columns: auto;
 }
@@ -23,7 +23,7 @@ header{
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-image: url("imagens/banner.png");
 }
 #texto{
@@ -38,6 +38,10 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.iconesApps img{
+    width: 2.5vw;
+}
+
 h1{
     color: white;
     font-family: 'Pacifico', cursive;
@@ -50,15 +54,14 @@ header p{
     font-weight: bold;
     line-height: 2em;
 }
-#iconesApps{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.mao > img{
+    width: 100%;
 }
-header img{
+
+.mao{
     width: 33%;
 }
+
 nav{
     grid-area: nav;
     background-color: white;
@@ -76,14 +79,21 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+.navDiv img{
+    background-color: green;
+    padding: 10px;
+    border-radius: 100%;
+}
 .icones{
     border-radius: 50%;
     background-color: rgb(0, 192, 0);
     opacity: 0.8;
     padding: 20px;
-    margin: 40px 65px 0px 65px;
+    /* margin: 40px 65px 0px 65px; */
     display: block;
-    flex-direction: line;
+    /* flex-direction: line; */
+    width: 40px;
+    height: 40px;
 }
 section{
     grid-area: section;
