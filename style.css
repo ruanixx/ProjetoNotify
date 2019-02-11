@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+}
+span{
+    color:rgb(0, 192, 0);
+}
+#grid{
+    display: grid;
+    grid-template-areas: 'div div div div'
+                         'header header header header'
+                         'nav nav nav nav'
+                         'section section section section'
+                         'article article article article'
+                         'footer footer footer footer';
+    grid-template-rows: 10px 510px 285px 365px 395px 95px;
+    grid-template-columns: auto;
+}
+#topo{
+    grid-area: div;
+    background-color: rgb(0, 192, 0);
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imagens/banner.png");
+}
+#texto{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    flex-direction: column;
+}
+.iconesApps{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+header p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2em;
+}
+#iconesApps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header img{
+    width: 33%;
+}
+nav{
+    grid-area: nav;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.navDiv h2{
+    color: black;
+    line-height: 1em;
+}
+.navDiv{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.icones{
+    border-radius: 50%;
+    background-color: rgb(0, 192, 0);
+    opacity: 0.8;
+    padding: 20px;
+    margin: 40px 65px 0px 65px;
+    display: block;
+    flex-direction: line;
+}
+section{
+    grid-area: section;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+#divSection{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+#divSection h2{
+    color: black;
+}
+section button{
+    color: white;
+    background-color: rgb(0, 192, 0);
+    border-radius: 50%;
+}
+article{
+    grid-area: article;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#articleP1{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    width: 70%;
+}
+#articleP2{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+article h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article p{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 40%;
+}
+footer ul a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
